@@ -127,7 +127,7 @@ UCCELLO_CONFIG.webSocketClient = UCCELLO_CONFIG.webSocketClient ? UCCELLO_CONFIG
 UCCELLO_CONFIG.webSocketClient.io_log_flag = _ch_trace_flag;
 
 // Тесты
-var UnitTests = require('../' + uccelloDir + '/connection/ut/testClientSide');
+var UnitTests = require('../' + uccelloDir + '/connection/unit-tests/lib/testClientSide');
 
 var commClient = new CommunicationClient.Client(UCCELLO_CONFIG.webSocketClient);
 var uccelloClt = new UccelloClt({
