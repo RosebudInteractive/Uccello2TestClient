@@ -120,14 +120,14 @@ for (var _cnt = 0; _cnt < process.argv.length; _cnt++) {
                     };
 };
 
-var CommunicationClient = require("../" + uccelloDir + "/connection/commClient");
-var UccelloClt = require("../" + uccelloDir + "/uccelloClt");
+var CommunicationClient = require("../" + uccelloDir + "/connection/comm-client");
+var UccelloClt = require("../" + uccelloDir + "/uccello-clt");
 
 UCCELLO_CONFIG.webSocketClient = UCCELLO_CONFIG.webSocketClient ? UCCELLO_CONFIG.webSocketClient : {};
 UCCELLO_CONFIG.webSocketClient.io_log_flag = _ch_trace_flag;
 
 // Тесты
-var UnitTests = require('../' + uccelloDir + '/connection/unit-tests/lib/testClientSide');
+var UnitTests = require('../' + uccelloDir + '/connection/unit-tests/lib/test-client-side');
 
 var commClient = new CommunicationClient.Client(UCCELLO_CONFIG.webSocketClient);
 var uccelloClt = new UccelloClt({
